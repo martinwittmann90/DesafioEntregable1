@@ -58,12 +58,13 @@ const product3 = {
     price: 'USD 70',
     thumbnail: 'https://ibb.co/rZBvwTH',
     code: 'C0003',
-    stock: '4',
+    stock: '3',
 };
 
 const productManager = new ProductManager ();
 
 console.log(productManager.addProduct(product));
 console.log(productManager.addProduct(product2));
-console.log(productManager.getProductById(1))
+console.log(productManager.addProduct(product3));
+console.log(productManager.getProductById(3))
 console.log(productManager.getProducts());
