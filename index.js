@@ -23,6 +23,10 @@ class ProductManager{
     this.id++;
     return 'Product added';
 }
+    getProducts(){
+        return this.products;
+    }
+
     getProductById(id) {
         let found = this.products.find((p) => p.id === id);
         if (!found) {
